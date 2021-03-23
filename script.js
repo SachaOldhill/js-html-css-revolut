@@ -1,10 +1,10 @@
 function clickActive() {
-    $('.ul_container').addClass('js-active');
+    $('.fa-minus-square,.fa-bars').toggleClass('js-active');
     console.log('click');
   };
 
 function init() {
- $('.fa-bars').click(clickActive);
+ $('.fa-bars,.fa-minus-square').click(clickActive);
 }
-
+init();
 $(document).ready(init);

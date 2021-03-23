@@ -10,6 +10,16 @@
 .ul_container{
   display: none;
 }
+.fa-minus-square{
+  display: none;
+}
+.fa-bars{
+  display: none;
+}
+.fa-minus-square, .fa-bars{
+  font-size: 80px;
+  padding: 20px 30px;
+}
 .js-active{
   display: block;
 }
