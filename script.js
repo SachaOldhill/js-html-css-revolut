@@ -6,10 +6,11 @@ function activeMenu() {
 function activeList() {
   $('.li_active').click(function () {
     var clickLi = $(this);
-    var clickedLi = clickLi.find('?');
-    //non riesco a far aprire un solo ul_elem con i li
-    //clickedLi.toggleClass('js-active');
-    //$('.li_elem').toggleClass('js-active');
+    var clickedUl = clickLi.siblings('.ul_elem');
+    console.log(clickedUl);
+    var clickLiElem = clickedUl.children('.li_elem');
+    console.log(clickLiElem);
+    clickLiElem.toggleClass('js-active');
   })
 
 }
